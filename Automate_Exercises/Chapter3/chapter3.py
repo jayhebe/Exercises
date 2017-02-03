@@ -12,6 +12,7 @@
 # spam()
 # print(eggs)
 
+
 def collatz(number):
     if number % 2 == 0:
         print(number // 2)

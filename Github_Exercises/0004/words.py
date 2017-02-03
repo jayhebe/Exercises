@@ -1,3 +1,5 @@
+# Github exercise 0002
+
 import re
 
 def count_words(file_name):

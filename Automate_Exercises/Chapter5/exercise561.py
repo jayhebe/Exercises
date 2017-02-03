@@ -1,3 +1,5 @@
+# exercise 5.6.1 and 5.6.2
+
 def display_inventory(inventory):
     total_number = 0
     print("Inventory:")

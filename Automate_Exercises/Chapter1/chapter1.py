@@ -1,5 +1,3 @@
-# Automate Chapter 1
-
 print('Hello world!')
 print('What is your name?')
 myName = input()

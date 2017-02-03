@@ -1,3 +1,5 @@
+# Github exercise 0001
+
 import string
 import random
 

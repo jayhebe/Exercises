@@ -1,5 +1,3 @@
-# Control Flow
-
 is_raining = input("Is it raining outside?")
  
 if is_raining == "yes":

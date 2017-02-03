@@ -56,6 +56,3 @@
 # temp = copy.deepcopy(spam)
 # print(temp)
 # print(cheese)
-
-spam = "jjjjjjjj"
-print(spam.upper())
