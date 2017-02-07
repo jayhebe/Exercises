@@ -108,3 +108,8 @@ import re
 # sentence_pattern = r"(Alice|Bob|Carol)\s(eats|pets|throws)\s(apples|cats|baseballs)\."
 # match_result = re.search(sentence_pattern, sentence, re.IGNORECASE)
 # print(match_result.group())
+
+ip_address = "192.168.1.1"
+ip_pattern = r"\d+\.\d+\.\d+\.\d+"
+ip_match = re.search(ip_pattern, ip_address)
+print(ip_match.group())
