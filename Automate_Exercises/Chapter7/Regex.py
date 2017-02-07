@@ -51,14 +51,60 @@ import re
 # bo3 = regex_zero_or_more.search("The Adventures of Batman")
 
 # 匹配指定次数，可以是单个数字{3}或者范围{3,5}
-# regex_dedicated = re.compile(r"Bat(wo){3}man")
-# bo4 = regex_dedicated.search("The Adventures of Batwowowoman")
-# 
+# regex_dedicated = re.compile(r"Bat(wo)*man")
+# bo4 = regex_dedicated.findall("The Adventures of Batwowowoman, Batwowoman, Batwoman")
+#  
 # if bo4 != None:
-#     print(bo4.group())
+#     print(bo4)
 # else:
 #     print("Cannot match the result.")
 
-regex_range = re.compile(r"(Ha){3,5}?")
-match_result = regex_range.search("Really? HaHaHaHaHa.")
-print(match_result.group())
+# regex_range = re.compile("(Ha){3,5}")
+# match_result = regex_range.search("Really? HaHaHaHaHa.")
+# print(match_result.group())
+
+# str = "Hello world!!"
+# match_result = re.findall("^Hello", str)
+# print(match_result)
+
+# orig_str = "This is my email address: jayhebe1983@sina.com, and you can also contact me with jayhebe1983@gmail.com."
+# match_result = re.findall(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}", orig_str)
+# 
+# if len(match_result) != 0:
+#     for item in match_result:
+#         print(item + " is a valid email address.")
+# else:
+#     print(orig_str + " is not a valid email address.")
+
+# key = r"<html><body><h1>hello world<h1></body></html>"
+# p1 = r"(?<=<h1>).+?(?=<h1>)"
+# pattern1 = re.compile(p1)
+# matcher1 = re.search(pattern1,key)
+# print(matcher1.group(0))
+
+# key = r"<h1>hello world<h1>"
+# p1 = r"<h1>.+<h1>"
+# pattern1 = re.compile(p1)
+# print(pattern1.findall(key))
+
+# key = r"jayhebe1983@sina.com.cn"
+# p1 = r"@[^\.]+\."
+# pattern1 = re.compile(p1)
+# print(pattern1.findall(key))
+
+# exercise 7.17.20
+# num = "1,234"
+# match_result = re.search(r"\d{1,3}(,\d{3})*", num)
+# print(match_result.group())
+
+# exercise 7.17.21
+# name = "Satoshi Nakamoto"
+# name_pattern = r"[A-Z][A-Za-z]*\sNakamoto"
+# match_result = re.search(name_pattern, name)
+# print(match_result.group())
+
+# exercise 7.17.22
+# sentence = "BOB EATS CATS."
+# sentence_pattern = r"(Alice|Bob|Carol)\s(eats|pets|throws)\s(apples|cats|baseballs)\."
+# match_result = re.search(sentence_pattern, sentence, re.IGNORECASE)
+# print(match_result.group())
