@@ -1,5 +1,6 @@
 import random, logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.disable(logging.CRITICAL)
 
 guess = ""
 while guess not in ("heads", "tails"):
