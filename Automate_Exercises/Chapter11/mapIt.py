@@ -8,4 +8,5 @@ import requests, bs4
 exampleFile = open("example.html")
 exampleSoup = bs4.BeautifulSoup(exampleFile, "html.parser")
 # print(type(exampleSoup))
-print(exampleSoup.select("p"))
+for p in exampleSoup.select("#author"):
+    print(p.get_text())
