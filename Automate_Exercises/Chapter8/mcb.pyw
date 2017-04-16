@@ -1,4 +1,4 @@
-import sys, pyperclip,shelve
+import sys, pyperclip, shelve
 
 file_name = "my_clipboard"
 
