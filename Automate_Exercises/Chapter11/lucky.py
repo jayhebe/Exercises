@@ -1,6 +1,5 @@
-import requests, sys, webbrowser, bs4
+import webbrowser, sys
 
 print("Baiduing...")
 
-res = requests.get("http://www.baidu.com/s?wd=" + sys.argv[1])
-res.raise_for_status()
+webbrowser.open("http://www.baidu.com/s?wd=" + sys.argv[1])
