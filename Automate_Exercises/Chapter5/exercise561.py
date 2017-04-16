@@ -1,4 +1,5 @@
 # exercise 5.6.1 and 5.6.2
+# author
 
 def display_inventory(inventory):
     total_number = 0
