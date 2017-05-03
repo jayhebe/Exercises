@@ -1,6 +1,6 @@
 import os
 
-for folder_name, subfolders, filenames in os.walk(r"C:\Study\Programming\Python\Exercises\Automate_Exercises"):
+for folder_name, subfolders, filenames in os.walk(r"D:\Scripts\Python\Exercises\Automate_Exercises"):
     print("The current folder is " + folder_name)
     
     for subfolder in subfolders:
