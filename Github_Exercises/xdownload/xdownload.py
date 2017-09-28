@@ -1,7 +1,7 @@
 import bs4, requests, os
 
-article_url = "http://www.vjenner.com/2016/05/vcap6-dcv-deployment-objective-1-1-perform-advanced-esxi-host-configuration/"
-image_folder = "D:\VMware\VCAP\Objective 1.1"
+article_url = "http://www.vjenner.com/2016/06/vcap6-dcv-deployment-objective-2-3-troubleshoot-complex-storage-solutions/"
+image_folder = "D:\VMware\VCAP\Objective 2.3"
 
 article_res = requests.get(article_url)
 article_res.raise_for_status()
