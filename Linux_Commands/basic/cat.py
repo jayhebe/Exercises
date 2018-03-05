@@ -9,13 +9,15 @@ elif len(sys.argv) == 2:
 else:
     print("Usage: cat.py [option] filename")
     exit(1)
-    
-with open(os.path.abspath(str_filename)) as f:
-    if str_option == "-n":
-        num = 1
-        for line in f.readlines():
-            print(str(num).rjust(6) + "  " + line, end = "")
-            num += 1
-    else:
-        for line in f.readlines():
-            print(line, end = "")
+try:    
+    with open(os.path.abspath(str_filename)) as f:
+        if str_option == "-n":
+            num = 1
+            for line in f.readlines():
+                print(str(num).rjust(6) + "  " + line, end = "")
+                num += 1
+        else:
+            for line in f.readlines():
+                print(line, end = "")
+except FileNotFoundError as ex:
+    print("Error: " + str(ex))
