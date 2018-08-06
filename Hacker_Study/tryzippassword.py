@@ -14,6 +14,7 @@ def test_zip_password(zip_file, password_list):
             zipfile.ZipFile(zip_file).extractall(pwd=password[:-1])
         except:
             continue
+        
         return password[:-1].decode()
 
 
